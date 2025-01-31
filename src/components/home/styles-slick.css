@@ -1,0 +1,51 @@
+/* Hide the default Slick arrows */
+.slick-prev, .slick-next {
+  display: none !important;
+}
+
+/* Style for the custom navigation container */
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between; /* Push buttons to the left and right */
+  width: 100%;
+}
+
+/* Style for the buttons (circle shape, half in/out) */
+.btn-prev, .btn-next {
+  background-color: white; /* White background */
+  color: black;
+  
+  border-radius: 50%; /* Make them circular */
+  width: 50px; /* Button size */
+  height: 50px;
+  font-size: 30px; /* Size of the arrow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid lightgray; /* Light gray border around the button */
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+}
+
+/* Position the buttons to be half in/out of the carousel */
+.btn-prev {
+  left: -25px; /* Half of the width to make it stick out */
+}
+
+.btn-next {
+  right: -25px; /* Half of the width to make it stick out */
+}
+@media (max-width: 768px) {
+  .slider-controls {
+    margin-top: 15px;
+  }
+}
+.nft_coll{
+  margin:8px;
+}
